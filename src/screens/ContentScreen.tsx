@@ -21,13 +21,13 @@ export function ContentScreen({kind, items}: Props) {
   return (
     <>
       <ScrollView contentContainerStyle={styles.contentScroll} showsVerticalScrollIndicator={false}>
-        <Header title={kind === 'events' ? 'Experiences' : 'Dining'} />
-        <Text style={styles.pageEyebrow}>{kind === 'events' ? 'CURATED FOR YOUR STAY' : 'FROM OUR KITCHEN'}</Text>
-        <Text style={styles.pageTitle}>{kind === 'events' ? 'Make every moment\nmemorable.' : 'Taste something\nexceptional.'}</Text>
+        <Header title={kind === 'events' ? 'Activities' : 'Dining'} />
+        <Text style={styles.pageEyebrow}>{kind === 'events' ? 'AVAILABLE DURING YOUR STAY' : 'MENU'}</Text>
+        <Text style={styles.pageTitle}>{kind === 'events' ? 'Activities and\nevents.' : 'Food and\ndrinks.'}</Text>
         <Text style={styles.pageLead}>
           {kind === 'events'
-            ? 'Discover resort activities, wellness sessions, and evening entertainment.'
-            : 'Explore breakfast, lunch, dinner, desserts, and drinks — available for room delivery.'}
+            ? 'View resort activities, wellness sessions, and evening entertainment.'
+            : 'View breakfast, lunch, dinner, desserts, and drinks available for room delivery.'}
         </Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips}>
           {categories.map(item => (
@@ -48,7 +48,7 @@ export function ContentScreen({kind, items}: Props) {
                 <Text style={styles.cardTitle}>{item.title}</Text>
                 <Text style={styles.cardDescription} numberOfLines={2}>{item.description}</Text>
                 <View style={styles.cardLinkRow}>
-                  <Text style={styles.cardLink}>{kind === 'events' ? 'VIEW EXPERIENCE' : 'VIEW DISH'}</Text>
+                  <Text style={styles.cardLink}>{kind === 'events' ? 'VIEW DETAILS' : 'VIEW ITEM'}</Text>
                   <Text style={styles.cardLink}>→</Text>
                 </View>
               </View>
@@ -58,7 +58,7 @@ export function ContentScreen({kind, items}: Props) {
       </ScrollView>
       <DetailScreen
         item={selected}
-        actionLabel={kind === 'events' ? 'RESERVE A PLACE' : 'ORDER TO MY ROOM'}
+        actionLabel={kind === 'events' ? 'RESERVE' : 'ORDER TO MY ROOM'}
         onClose={() => setSelected(null)}
         onAction={() => {
           setSelected(null);
@@ -68,7 +68,7 @@ export function ContentScreen({kind, items}: Props) {
       <ConfirmationModal
         visible={confirmed}
         title={kind === 'events' ? 'Place reserved' : 'Order received'}
-        message={kind === 'events' ? 'We added this experience to your stay.' : 'The kitchen will begin preparing your order shortly.'}
+        message={kind === 'events' ? 'This activity has been added to your stay.' : 'Your order has been sent to the kitchen.'}
         onClose={() => setConfirmed(false)}
       />
     </>

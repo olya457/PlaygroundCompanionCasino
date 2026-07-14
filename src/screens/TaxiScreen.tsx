@@ -242,7 +242,7 @@ export function TaxiScreen() {
 
       <OptionModal
         visible={picker !== null}
-        title={picker === 'pickup' ? 'Pickup location' : picker === 'destination' ? 'Where are you going?' : picker === 'date' ? 'Select date' : 'Select time'}
+        title={picker === 'pickup' ? 'Select pickup location' : picker === 'destination' ? 'Select destination' : picker === 'date' ? 'Select date' : 'Select time'}
         options={pickerOptions}
         selected={pickerValue}
         onClose={() => setPicker(null)}

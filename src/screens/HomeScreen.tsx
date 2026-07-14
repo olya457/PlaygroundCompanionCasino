@@ -40,14 +40,14 @@ export function HomeScreen({onNavigate}: {onNavigate: (tab: MainTab) => void}) {
       <KeyboardAvoidingView style={styles.fill} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         <ScrollView contentContainerStyle={styles.homeScroll} keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false}>
           <Header />
-          <Text style={styles.homeKicker}>YOUR STAY STARTS HERE</Text>
-          <Text style={styles.homeGreeting}>{name.trim() ? `Hello, ${name.trim()}` : 'Hello, Guest'}</Text>
-          <Text style={styles.homeLead}>Tell us a little about your stay to unlock your personal resort companion.</Text>
+          <Text style={styles.homeKicker}>STAY DETAILS</Text>
+          <Text style={styles.homeGreeting}>{name.trim() ? `Stay details for ${name.trim()}` : 'Guest stay details'}</Text>
+          <Text style={styles.homeLead}>Add your name, room, and date to save your stay details.</Text>
 
           <ImageBackground source={require('../assets/playground-resort-hero.png')} imageStyle={styles.heroImage} style={styles.heroCard}>
             <View style={styles.heroOverlay}>
               <Text style={styles.heroEyebrow}>PLAYGROUND RESORT</Text>
-              <Text style={styles.heroTitle}>Welcome to a more{'\n'}personal stay.</Text>
+              <Text style={styles.heroTitle}>Resort information{'\n'}and services.</Text>
             </View>
           </ImageBackground>
 
@@ -80,17 +80,17 @@ export function HomeScreen({onNavigate}: {onNavigate: (tab: MainTab) => void}) {
             </Pressable>
           </View>
 
-          <Text style={styles.sectionLabel}>DISCOVER THE RESORT</Text>
+          <Text style={styles.sectionLabel}>RESORT SERVICES</Text>
           <View style={styles.quickRow}>
             <Pressable style={styles.quickCard} onPress={() => onNavigate('events')}>
               <Text style={styles.quickIcon}>✦</Text>
-              <Text style={styles.quickTitle}>Experiences</Text>
-              <Text style={styles.quickText}>See what is happening today</Text>
+              <Text style={styles.quickTitle}>Activities</Text>
+              <Text style={styles.quickText}>View today's schedule</Text>
             </Pressable>
             <Pressable style={styles.quickCard} onPress={() => onNavigate('menu')}>
               <Text style={styles.quickIcon}>⌁</Text>
               <Text style={styles.quickTitle}>Dining</Text>
-              <Text style={styles.quickText}>Explore menus and room service</Text>
+              <Text style={styles.quickText}>View menus and room service</Text>
             </Pressable>
           </View>
         </ScrollView>
@@ -106,7 +106,7 @@ export function HomeScreen({onNavigate}: {onNavigate: (tab: MainTab) => void}) {
       />
       <ConfirmationModal
         visible={welcomeVisible}
-        title={name.trim() ? `Welcome, ${name.trim()}` : 'Welcome, Guest'}
+        title="Stay details saved"
         message={room && date ? `Room ${room} · ${date}\nYour stay details are ready.` : 'You can add or change your stay details at any time.'}
         onClose={() => setWelcomeVisible(false)}
       />

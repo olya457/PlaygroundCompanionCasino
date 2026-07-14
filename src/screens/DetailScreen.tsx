@@ -31,7 +31,7 @@ export function DetailScreen({item, actionLabel, onClose, onAction}: Props) {
           <View style={styles.detailRule} />
           <Text style={styles.detailDescription}>{item.description}</Text>
           <Text style={styles.detailDescription}>
-            Our team has selected every detail to make this part of your stay feel effortless, memorable, and distinctly Playground.
+            Availability and service details may vary. Contact the resort team if you need more information.
           </Text>
           <Pressable style={styles.fullButton} onPress={onAction}>
             <Text style={styles.primaryButtonText}>{actionLabel}</Text>

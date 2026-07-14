@@ -6,27 +6,27 @@ import {styles} from '../styles';
 const onboarding = [
   {
     image: require('../assets/playground-onboarding-lobby.png'),
-    eyebrow: 'WELCOME TO PLAYGROUND RESORT',
-    title: 'A stay designed\naround you',
-    text: 'Your personal companion for a seamless and unforgettable resort experience.',
+    eyebrow: 'PLAYGROUND RESORT INFORMATION',
+    title: 'Information for\nyour stay',
+    text: 'View resort information and access available services during your stay.',
   },
   {
     image: require('../assets/playground-onboarding-reception.png'),
-    eyebrow: 'PERSONAL CONCIERGE',
-    title: 'Discover daily\nexperiences',
-    text: 'Explore wellness sessions, live entertainment, and memorable activities every day.',
+    eyebrow: 'ACTIVITIES',
+    title: 'View daily\nactivities',
+    text: 'View scheduled wellness sessions, entertainment, and other activities.',
   },
   {
     image: require('../assets/playground-onboarding-restaurant.png'),
     eyebrow: 'RESTAURANT & ROOM SERVICE',
-    title: 'Order food\nanytime',
-    text: 'Browse restaurant favorites and have them delivered straight to your room.',
+    title: 'View dining\noptions',
+    text: 'Browse the menu and order available items for delivery to your room.',
   },
   {
     image: require('../assets/playground-onboarding-jazz-evening.png'),
-    eyebrow: 'EVERYTHING IN ONE PLACE',
-    title: 'Everything\nyou need',
-    text: 'Events, dining, room service, and resort information — all at your fingertips.',
+    eyebrow: 'INFORMATION AND SERVICES',
+    title: 'Resort services\nin one place',
+    text: 'Access activities, dining, room service, and resort information.',
   },
 ];
 

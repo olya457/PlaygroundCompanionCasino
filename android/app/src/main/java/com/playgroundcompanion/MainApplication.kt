@@ -1,4 +1,4 @@
-package com.playgroundcompanioncasino
+package com.playgroundcompanion
 
 import android.app.Application
 import com.facebook.react.PackageList

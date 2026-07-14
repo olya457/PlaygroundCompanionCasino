@@ -30,8 +30,8 @@ export function SplashScreen({onDone}: {onDone: () => void}) {
       <View style={styles.splashShade} />
       <Animated.View style={[styles.splashContent, {opacity}]}>
         <View style={styles.splashHeadingPanel}>
-          <Text style={styles.splashTitle}>{'Playground\nCompanion\nCasino'}</Text>
-          <Text style={styles.splashSubtitle}>Your Personal Concierge</Text>
+          <Text style={styles.splashTitle}>{'Playground\nCompanion'}</Text>
+          <Text style={styles.splashSubtitle}>Resort Information and Services</Text>
         </View>
         <Image
           source={require('../assets/playground-brand-logo.png')}

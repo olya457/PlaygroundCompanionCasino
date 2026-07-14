@@ -5,7 +5,7 @@ import type {MainTab} from '../types';
 
 const items: {id: MainTab; icon: string; label: string}[] = [
   {id: 'home', icon: '⌂', label: 'Home'},
-  {id: 'events', icon: '✦', label: 'Experiences'},
+  {id: 'events', icon: '✦', label: 'Activities'},
   {id: 'menu', icon: '⌁', label: 'Dining'},
   {id: 'climate', icon: '♨', label: 'Climate'},
   {id: 'taxi', icon: '▱', label: 'Taxi'},
