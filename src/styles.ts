@@ -1,4 +1,4 @@
-import {Platform, StyleSheet} from 'react-native';
+import {Platform, StatusBar, StyleSheet} from 'react-native';
 import {colors} from './theme';
 
 export const styles = StyleSheet.create({
@@ -37,8 +37,10 @@ export const styles = StyleSheet.create({
   onboardingTop: {paddingHorizontal: 24, paddingTop: 12, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'},
   skip: {color: colors.white, fontSize: 11, fontWeight: '700', letterSpacing: 1.4},
   onboardingCopy: {marginTop: 'auto', paddingHorizontal: 24, paddingBottom: 26, paddingTop: 85, backgroundColor: 'rgba(5,10,14,.58)'},
+  onboardingCopyCompact: {paddingTop: 28, paddingBottom: 16},
   eyebrow: {color: colors.red, fontSize: 9, fontWeight: '800', letterSpacing: 1.7, marginBottom: 12},
   onboardingTitle: {color: colors.white, fontSize: 40, lineHeight: 43, fontWeight: '700', letterSpacing: -1.4},
+  onboardingTitleCompact: {fontSize: 32, lineHeight: 35},
   onboardingText: {color: '#CDD3D7', fontSize: 14, lineHeight: 21, marginTop: 14, maxWidth: 330},
   onboardingFooter: {marginTop: 28, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'},
   dots: {flexDirection: 'row', gap: 7},
@@ -110,7 +112,7 @@ export const styles = StyleSheet.create({
   radioActive: {borderColor: colors.red},
   radioDot: {width: 8, height: 8, borderRadius: 4, backgroundColor: colors.red},
   detailModal: {flex: 1, backgroundColor: colors.background},
-  closeButton: {position: 'absolute', zIndex: 2, top: Platform.OS === 'ios' ? 48 : 14, right: 16, width: 42, height: 42, borderRadius: 21, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.white, shadowColor: '#000000', shadowOpacity: 0.28, shadowRadius: 8, shadowOffset: {width: 0, height: 3}, elevation: 6},
+  closeButton: {position: 'absolute', zIndex: 2, top: Platform.OS === 'ios' ? 48 : 14 + (StatusBar.currentHeight ?? 0), right: 16, width: 42, height: 42, borderRadius: 21, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.white, shadowColor: '#000000', shadowOpacity: 0.28, shadowRadius: 8, shadowOffset: {width: 0, height: 3}, elevation: 6},
   closeButtonText: {color: '#000000', fontSize: 29, lineHeight: 31},
   detailScroll: {paddingBottom: 35},
   detailImage: {height: 300, alignSelf: 'center', resizeMode: 'cover'},

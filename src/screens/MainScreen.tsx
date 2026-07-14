@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {SafeAreaView, StatusBar, View} from 'react-native';
+import {StatusBar, View} from 'react-native';
 import {BottomTabs} from '../components/BottomTabs';
+import {ScreenSafeArea} from '../components/ScreenSafeArea';
 import {styles} from '../styles';
 import {colors} from '../theme';
 import type {MainTab} from '../types';
@@ -14,8 +15,8 @@ export function MainScreen() {
   const [tab, setTab] = useState<MainTab>('home');
 
   return (
-    <SafeAreaView style={styles.appSafe}>
-      <StatusBar barStyle="light-content" backgroundColor={colors.background} />
+    <ScreenSafeArea style={styles.appSafe}>
+      <StatusBar barStyle="light-content" translucent backgroundColor={colors.background} />
       <View style={styles.mainContent}>
         {tab === 'home' && <HomeScreen onNavigate={setTab} />}
         {tab === 'events' && <EventsScreen />}
@@ -24,6 +25,6 @@ export function MainScreen() {
         {tab === 'taxi' && <TaxiScreen />}
       </View>
       <BottomTabs tab={tab} onChange={setTab} />
-    </SafeAreaView>
+    </ScreenSafeArea>
   );
 }

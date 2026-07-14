@@ -1,5 +1,6 @@
 import React from 'react';
-import {Image, Modal, Pressable, SafeAreaView, ScrollView, Text, useWindowDimensions, View} from 'react-native';
+import {Image, Modal, Pressable, ScrollView, Text, useWindowDimensions, View} from 'react-native';
+import {ScreenSafeArea} from '../components/ScreenSafeArea';
 import type {ContentItem} from '../data';
 import {styles} from '../styles';
 
@@ -19,7 +20,7 @@ export function DetailScreen({item, actionLabel, onClose, onAction}: Props) {
 
   return (
     <Modal visible transparent animationType="slide" onRequestClose={onClose}>
-      <SafeAreaView style={styles.detailModal}>
+      <ScreenSafeArea style={styles.detailModal}>
         <Pressable style={styles.closeButton} onPress={onClose} accessibilityLabel="Close details">
           <Text style={styles.closeButtonText}>×</Text>
         </Pressable>
@@ -38,7 +39,7 @@ export function DetailScreen({item, actionLabel, onClose, onAction}: Props) {
             <Text style={styles.buttonArrow}>→</Text>
           </Pressable>
         </ScrollView>
-      </SafeAreaView>
+      </ScreenSafeArea>
     </Modal>
   );
 }
