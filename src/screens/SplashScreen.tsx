@@ -23,18 +23,18 @@ export function SplashScreen({onDone}: {onDone: () => void}) {
 
   return (
     <ImageBackground
-      source={require('../assets/playground-resort-exterior.png')}
+      source={require('../assets/harbor-stay-resort-exterior.png')}
       resizeMode="cover"
       style={styles.splash}>
       <StatusBar hidden />
       <View style={styles.splashShade} />
       <Animated.View style={[styles.splashContent, {opacity}]}>
         <View style={styles.splashHeadingPanel}>
-          <Text style={styles.splashTitle}>{'Playground\nCompanion'}</Text>
-          <Text style={styles.splashSubtitle}>Resort Information and Services</Text>
+          <Text style={styles.splashTitle}>{'Harbor Stay\nCompanion'}</Text>
+          <Text style={styles.splashSubtitle}>Information and Everyday Services</Text>
         </View>
         <Image
-          source={require('../assets/playground-brand-logo.png')}
+          source={require('../assets/harbor-stay-brand-logo.png')}
           style={styles.splashLogo}
         />
         <View style={styles.splashLoader}>

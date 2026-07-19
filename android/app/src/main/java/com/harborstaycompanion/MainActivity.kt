@@ -1,4 +1,4 @@
-package com.playgroundcompanion
+package com.harborstaycompanion
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

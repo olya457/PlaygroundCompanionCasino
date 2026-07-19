@@ -6,28 +6,28 @@ import {styles} from '../styles';
 
 const onboarding = [
   {
-    image: require('../assets/playground-onboarding-lobby.png'),
-    eyebrow: 'PLAYGROUND RESORT INFORMATION',
-    title: 'Information for\nyour stay',
-    text: 'View resort information and access available services during your stay.',
+    image: require('../assets/harbor-stay-onboarding-lobby.png'),
+    eyebrow: 'HARBOR STAY COMPANION',
+    title: 'Useful details for\nyour visit',
+    text: 'Find practical information and access available services in one place.',
   },
   {
-    image: require('../assets/playground-onboarding-reception.png'),
+    image: require('../assets/harbor-stay-onboarding-reception.png'),
     eyebrow: 'ACTIVITIES',
     title: 'View daily\nactivities',
-    text: 'View scheduled wellness sessions, entertainment, and other activities.',
+    text: 'Browse scheduled wellness sessions, local experiences, and other activities.',
   },
   {
-    image: require('../assets/playground-onboarding-restaurant.png'),
-    eyebrow: 'RESTAURANT & ROOM SERVICE',
+    image: require('../assets/harbor-stay-onboarding-restaurant.png'),
+    eyebrow: 'DINING OPTIONS',
     title: 'View dining\noptions',
-    text: 'Browse the menu and order available items for delivery to your room.',
+    text: 'Browse available menus and choose items for convenient delivery.',
   },
   {
-    image: require('../assets/playground-onboarding-jazz-evening.png'),
+    image: require('../assets/harbor-stay-onboarding-jazz-evening.png'),
     eyebrow: 'INFORMATION AND SERVICES',
-    title: 'Resort services\nin one place',
-    text: 'Access activities, dining, room service, and resort information.',
+    title: 'Everyday services\nin one place',
+    text: 'Access activities, dining options, climate controls, and transportation details.',
   },
 ];
 

@@ -42,12 +42,12 @@ export function HomeScreen({onNavigate}: {onNavigate: (tab: MainTab) => void}) {
           <Header />
           <Text style={styles.homeKicker}>STAY DETAILS</Text>
           <Text style={styles.homeGreeting}>{name.trim() ? `Stay details for ${name.trim()}` : 'Guest stay details'}</Text>
-          <Text style={styles.homeLead}>Add your name, room, and date to save your stay details.</Text>
+          <Text style={styles.homeLead}>Keep your visit details handy for quicker access to available services.</Text>
 
-          <ImageBackground source={require('../assets/playground-resort-hero.png')} imageStyle={styles.heroImage} style={styles.heroCard}>
+          <ImageBackground source={require('../assets/harbor-stay-resort-hero.png')} imageStyle={styles.heroImage} style={styles.heroCard}>
             <View style={styles.heroOverlay}>
-              <Text style={styles.heroEyebrow}>PLAYGROUND RESORT</Text>
-              <Text style={styles.heroTitle}>Resort information{'\n'}and services.</Text>
+              <Text style={styles.heroEyebrow}>HARBOR STAY COMPANION</Text>
+              <Text style={styles.heroTitle}>Helpful information{'\n'}for your visit.</Text>
             </View>
           </ImageBackground>
 
@@ -80,7 +80,7 @@ export function HomeScreen({onNavigate}: {onNavigate: (tab: MainTab) => void}) {
             </Pressable>
           </View>
 
-          <Text style={styles.sectionLabel}>RESORT SERVICES</Text>
+          <Text style={styles.sectionLabel}>AVAILABLE SERVICES</Text>
           <View style={styles.quickRow}>
             <Pressable style={styles.quickCard} onPress={() => onNavigate('events')}>
               <Text style={styles.quickIcon}>✦</Text>
@@ -90,7 +90,7 @@ export function HomeScreen({onNavigate}: {onNavigate: (tab: MainTab) => void}) {
             <Pressable style={styles.quickCard} onPress={() => onNavigate('menu')}>
               <Text style={styles.quickIcon}>⌁</Text>
               <Text style={styles.quickTitle}>Dining</Text>
-              <Text style={styles.quickText}>View menus and room service</Text>
+              <Text style={styles.quickText}>Browse menus and delivery options</Text>
             </Pressable>
           </View>
         </ScrollView>

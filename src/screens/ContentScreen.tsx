@@ -26,8 +26,8 @@ export function ContentScreen({kind, items}: Props) {
         <Text style={styles.pageTitle}>{kind === 'events' ? 'Activities and\nevents.' : 'Food and\ndrinks.'}</Text>
         <Text style={styles.pageLead}>
           {kind === 'events'
-            ? 'View resort activities, wellness sessions, and evening entertainment.'
-            : 'View breakfast, lunch, dinner, desserts, and drinks available for room delivery.'}
+            ? 'Browse wellness sessions, local experiences, and scheduled activities.'
+            : 'Browse breakfast, lunch, dinner, desserts, and drinks available for delivery.'}
         </Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips}>
           {categories.map(item => (
