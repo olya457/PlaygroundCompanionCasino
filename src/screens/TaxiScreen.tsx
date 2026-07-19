@@ -9,7 +9,7 @@ type VehicleType = (typeof vehicleTypes)[number];
 type Picker = 'pickup' | 'destination' | 'date' | 'time';
 
 const locations = [
-  {name: 'Harbor Stay Companion', address: 'Main entrance', x: 0, y: 0},
+  {name: 'Resort Stay Companion', address: 'Main entrance', x: 0, y: 0},
   {name: 'Vancouver International Airport', address: 'Departures terminal', x: 7.6, y: 4.1},
   {name: 'Downtown Vancouver', address: 'Canada Place', x: 5.4, y: 2.8},
   {name: 'Central Station', address: 'Pacific Central Station', x: 4.2, y: 3.1},
@@ -40,7 +40,7 @@ const timeOptions = Array.from({length: 48}, (_, index) => {
 export function TaxiScreen() {
   const [vehicle, setVehicle] = useState<VehicleType>('BUSINESS');
   const [pickupMode, setPickupMode] = useState<'NOW' | 'SCHEDULE'>('NOW');
-  const [pickup, setPickup] = useState('Harbor Stay Companion');
+  const [pickup, setPickup] = useState('Resort Stay Companion');
   const [destination, setDestination] = useState('');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');

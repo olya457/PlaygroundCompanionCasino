@@ -6,25 +6,25 @@ import {styles} from '../styles';
 
 const onboarding = [
   {
-    image: require('../assets/harbor-stay-onboarding-lobby.png'),
-    eyebrow: 'HARBOR STAY COMPANION',
+    image: require('../assets/resort-stay-onboarding-lobby.png'),
+    eyebrow: 'RESORT STAY COMPANION',
     title: 'Useful details for\nyour visit',
     text: 'Find practical information and access available services in one place.',
   },
   {
-    image: require('../assets/harbor-stay-onboarding-reception.png'),
+    image: require('../assets/resort-stay-onboarding-reception.png'),
     eyebrow: 'ACTIVITIES',
     title: 'View daily\nactivities',
     text: 'Browse scheduled wellness sessions, local experiences, and other activities.',
   },
   {
-    image: require('../assets/harbor-stay-onboarding-restaurant.png'),
+    image: require('../assets/resort-stay-onboarding-restaurant.png'),
     eyebrow: 'DINING OPTIONS',
     title: 'View dining\noptions',
     text: 'Browse available menus and choose items for convenient delivery.',
   },
   {
-    image: require('../assets/harbor-stay-onboarding-jazz-evening.png'),
+    image: require('../assets/resort-stay-onboarding-jazz-evening.png'),
     eyebrow: 'INFORMATION AND SERVICES',
     title: 'Everyday services\nin one place',
     text: 'Access activities, dining options, climate controls, and transportation details.',

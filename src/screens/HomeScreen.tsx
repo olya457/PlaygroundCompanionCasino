@@ -44,9 +44,9 @@ export function HomeScreen({onNavigate}: {onNavigate: (tab: MainTab) => void}) {
           <Text style={styles.homeGreeting}>{name.trim() ? `Stay details for ${name.trim()}` : 'Guest stay details'}</Text>
           <Text style={styles.homeLead}>Keep your visit details handy for quicker access to available services.</Text>
 
-          <ImageBackground source={require('../assets/harbor-stay-resort-hero.png')} imageStyle={styles.heroImage} style={styles.heroCard}>
+          <ImageBackground source={require('../assets/resort-stay-resort-hero.png')} imageStyle={styles.heroImage} style={styles.heroCard}>
             <View style={styles.heroOverlay}>
-              <Text style={styles.heroEyebrow}>HARBOR STAY COMPANION</Text>
+              <Text style={styles.heroEyebrow}>RESORT STAY COMPANION</Text>
               <Text style={styles.heroTitle}>Helpful information{'\n'}for your visit.</Text>
             </View>
           </ImageBackground>

@@ -1,4 +1,4 @@
-package com.harborstaycompanion
+package com.resortstaycompanion
 
 import android.app.Application
 import com.facebook.react.PackageList
