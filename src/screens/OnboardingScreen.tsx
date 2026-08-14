@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {ImageBackground, Pressable, StatusBar, Text, useWindowDimensions, View} from 'react-native';
+import {ImageBackground, Platform, Pressable, StatusBar, Text, useWindowDimensions, View} from 'react-native';
 import {Brand} from '../components/Brand';
 import {ScreenSafeArea} from '../components/ScreenSafeArea';
 import {styles} from '../styles';
@@ -7,7 +7,7 @@ import {styles} from '../styles';
 const onboarding = [
   {
     image: require('../assets/resort-stay-onboarding-lobby.png'),
-    eyebrow: 'RESORT STAY COMPANION',
+    eyebrow: 'HOTEL GUEST HUB',
     title: 'Useful details for\nyour visit',
     text: 'Find practical information and access available services in one place.',
   },
@@ -51,7 +51,12 @@ export function OnboardingScreen({onComplete}: {onComplete: () => void}) {
             </Pressable>
           )}
         </View>
-        <View style={[styles.onboardingCopy, compact && styles.onboardingCopyCompact]}>
+        <View
+          style={[
+            styles.onboardingCopy,
+            compact && styles.onboardingCopyCompact,
+            Platform.OS === 'android' && styles.onboardingCopyAndroidLift,
+          ]}>
           <Text style={styles.eyebrow}>{item.eyebrow}</Text>
           <Text style={[styles.onboardingTitle, compact && styles.onboardingTitleCompact]}>{item.title}</Text>
           <Text style={styles.onboardingText}>{item.text}</Text>

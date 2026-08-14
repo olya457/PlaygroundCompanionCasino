@@ -1,4 +1,4 @@
-package com.resortstaycompanion
+package com.hotelguesthub
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

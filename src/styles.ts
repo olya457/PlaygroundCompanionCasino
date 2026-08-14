@@ -38,6 +38,7 @@ export const styles = StyleSheet.create({
   skip: {color: colors.white, fontSize: 11, fontWeight: '700', letterSpacing: 1.4},
   onboardingCopy: {marginTop: 'auto', paddingHorizontal: 24, paddingBottom: 26, paddingTop: 85, backgroundColor: 'rgba(5,10,14,.58)'},
   onboardingCopyCompact: {paddingTop: 28, paddingBottom: 16},
+  onboardingCopyAndroidLift: {marginBottom: 20},
   eyebrow: {color: colors.red, fontSize: 9, fontWeight: '800', letterSpacing: 1.7, marginBottom: 12},
   onboardingTitle: {color: colors.white, fontSize: 40, lineHeight: 43, fontWeight: '700', letterSpacing: -1.4},
   onboardingTitleCompact: {fontSize: 32, lineHeight: 35},

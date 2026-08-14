@@ -30,7 +30,7 @@ export function SplashScreen({onDone}: {onDone: () => void}) {
       <View style={styles.splashShade} />
       <Animated.View style={[styles.splashContent, {opacity}]}>
         <View style={styles.splashHeadingPanel}>
-          <Text style={styles.splashTitle}>{'Resort Stay\nCompanion'}</Text>
+          <Text style={styles.splashTitle}>{'Hotel Guest\nHub'}</Text>
           <Text style={styles.splashSubtitle}>Information and Everyday Services</Text>
         </View>
         <Image

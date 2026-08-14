@@ -1,4 +1,4 @@
-package com.resortstaycompanion
+package com.hotelguesthub
 
 import android.app.Application
 import com.facebook.react.PackageList

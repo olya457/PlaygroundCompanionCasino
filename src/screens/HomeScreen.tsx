@@ -46,7 +46,7 @@ export function HomeScreen({onNavigate}: {onNavigate: (tab: MainTab) => void}) {
 
           <ImageBackground source={require('../assets/resort-stay-resort-hero.png')} imageStyle={styles.heroImage} style={styles.heroCard}>
             <View style={styles.heroOverlay}>
-              <Text style={styles.heroEyebrow}>RESORT STAY COMPANION</Text>
+              <Text style={styles.heroEyebrow}>HOTEL GUEST HUB</Text>
               <Text style={styles.heroTitle}>Helpful information{'\n'}for your visit.</Text>
             </View>
           </ImageBackground>
